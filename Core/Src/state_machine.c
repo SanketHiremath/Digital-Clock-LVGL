@@ -25,17 +25,19 @@ uint8_t del_pomodoro_task_flag;
 bool button_read(lv_indev_drv_t *drv, lv_indev_data_t * data){
 //	uint8_t screenNumber = button_register.screen;
 
-	if( button_register.downButton){
+	if(button_register.downButton){
 		button_register.downButton = 0;
-		lv_group_send_data(g, LV_KEY_UP);
-//		lv_group_send_data(m, LV_KEY_UP);
+		lv_group_send_data(g, LV_KEY_DOWN);
+		brightness_val -= 20;
+
 		if (button_register.screen == 5)
 			lv_task_del(task);
 	}
 
-	else if( button_register.upButton){
+	else if(button_register.upButton){
 		button_register.upButton = 0;
-		lv_group_send_data(g, LV_KEY_DOWN);
+		brightness_val += 20;
+		lv_group_send_data(g, LV_KEY_UP);
 //		lv_group_send_data(m, LV_KEY_DOWN);
 	}
 

@@ -12,7 +12,5 @@
 
 void launch_analog_clock(void);
 void analog(void);
-void kill_analog_clock(void);
-
 
 #endif /* CLOCK_PAGE_CLOCK_H_ */

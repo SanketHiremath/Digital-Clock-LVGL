@@ -103,14 +103,17 @@ void startup_sequence() {
 			current_hour = sTime.Hours + 12;
 			total_time = (current_hour * 60 * 60) + (sTime.Minutes * 60) + (sTime.Seconds);
 			if ((total_time >= 82800) || (total_time <= 25200)) {
-				Set_Brightness(11);
+				brightness_val = 11;
+				Set_Brightness(brightness_val);
 			}
 			else {
-				Set_Brightness(255);
+				brightness_val = 255;
+				Set_Brightness(brightness_val);
 			}
 		}
 		else {
-			Set_Brightness(255);
+			brightness_val = 255;
+			Set_Brightness(brightness_val);
 
 		}
 	}
@@ -125,7 +128,12 @@ void startup_sequence() {
 
 			total_time = (current_hour * 60 * 60) + (sTime.Minutes * 60) + (sTime.Seconds);
 			if (total_time >= 25200) {
-				Set_Brightness(255);
+				brightness_val = 255;
+				Set_Brightness(brightness_val);
+			}
+			else {
+				brightness_val = 17;
+				Set_Brightness(brightness_val);
 			}
 		}
 
@@ -154,8 +162,8 @@ void set_time(){
 	  RTC_DateTypeDef sDate = {0};
 	 /** Initialize RTC and set the Time and Date
 	  */
-	  sTime.Hours = 6;
-	  sTime.Minutes = 10;
+	  sTime.Hours = 7;
+	  sTime.Minutes = 55;
 	  sTime.Seconds = 0;
 	  sTime.TimeFormat = RTC_HOURFORMAT12_PM;
 	  sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
@@ -164,9 +172,9 @@ void set_time(){
 	  {
 	    Error_Handler();
 	  }
-	  sDate.WeekDay = RTC_WEEKDAY_SATURDAY;
-	  sDate.Month = RTC_MONTH_MARCH;
-	  sDate.Date = 14;
+	  sDate.WeekDay = RTC_WEEKDAY_THURSDAY;
+	  sDate.Month = RTC_MONTH_APRIL;
+	  sDate.Date = 1;
 	  sDate.Year = 21;
 
 	  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)
@@ -174,7 +182,7 @@ void set_time(){
 	    Error_Handler();
 	  }
 	  HAL_PWR_EnableBkUpAccess();
-	  HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR0, 0xA5F0A5F1); // backup register
+	  HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR0, 0xA5F0A5F0); // backup register
 
 }
 
@@ -215,7 +223,7 @@ int main(void)
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
 
-  if(HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR0)!= 0xA5F0A5F1) {
+  if(HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR0)!= 0xA5F0A5F0) {
 	  set_time();
   }
 
@@ -236,7 +244,7 @@ int main(void)
 
    HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
    startup_sequence();
- //  Set_Brightness(255);
+//   Set_Brightness(20);
    launch_analog_clock();
 
   /* USER CODE END 2 */

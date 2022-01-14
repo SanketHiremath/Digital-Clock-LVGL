@@ -15,6 +15,8 @@
 static lv_obj_t * labels[3];
 static lv_obj_t * scr5;
 static lv_obj_t * arc;
+static lv_obj_t * label2;
+static lv_obj_t * btn2;
 lv_task_t * task;
 
 LV_IMG_DECLARE(label1);
@@ -37,7 +39,7 @@ static void arc_loader_hold(void * v)
 static void arc_loader(lv_task_t * task)
 {
     static int16_t a = 270;
-    const char * texts[] = {"Breath in", "Hold breath", "Breath out", NULL};
+    const char * texts[] = {"Inhale", "Hold", "Exhale", NULL};
  //   static uint8_t i = 0;
 
 
@@ -84,6 +86,11 @@ void update_breathing(void)
 
 	  static lv_style_t style;
 	  lv_style_init(&style);
+      static lv_style_t style_spinner;
+      lv_style_init(&style_spinner);
+
+      lv_style_set_line_width(&style_spinner,LV_STATE_DEFAULT, 10);
+
 
 	  scr5 = lv_obj_create(NULL, NULL);
 	  lv_obj_set_style_local_bg_color(scr5, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT, LV_COLOR_BLACK);
@@ -91,16 +98,35 @@ void update_breathing(void)
 
 
 	  arc = lv_arc_create(scr5, NULL);
+	  lv_obj_set_style_local_border_opa(arc, LV_ARC_PART_BG, LV_STATE_DEFAULT, 0);
+	  lv_obj_set_style_local_bg_opa(arc, LV_ARC_PART_BG, LV_STATE_DEFAULT, 0);
 	  lv_arc_set_bg_angles(arc, 0, 360);
 	  lv_arc_set_angles(arc, 270, 270);
-	  lv_obj_align(arc, NULL, LV_ALIGN_CENTER, 0, 0);
+	  lv_obj_add_style(arc,LV_LABEL_PART_MAIN,&style_spinner);
+	  lv_obj_add_style(arc,LV_SPINNER_PART_INDIC,&style_spinner);
+	  lv_obj_set_width(arc,80);
+	  lv_obj_set_height(arc,80);
+	  lv_obj_align(arc, NULL, LV_ALIGN_CENTER, 0, -10);
 
-	  lv_style_set_text_color(&style, LV_STATE_DEFAULT, LV_COLOR_RED);
+
+
+	    	  btn2 = lv_btn_create(scr5, NULL);
+//	    	  lv_obj_set_event_cb(btn2, stpbtn_event_handler);
+	    	  lv_obj_align(btn2, scr5, LV_ALIGN_IN_BOTTOM_MID, 0, 0);
+	    	  lv_obj_set_size(btn2, 127, 30);
+	          lv_btn_set_checkable(btn2, true);
+
+
+	    	   label2 = lv_label_create(btn2, NULL);
+	    	   lv_label_set_recolor(label2, true);
+	    	   lv_label_set_text(label2, "#0000ff Stop#");
+
+	  lv_style_set_text_color(&style, LV_STATE_DEFAULT, LV_COLOR_WHITE);
 	  lv_style_set_text_font(&style, LV_STATE_DEFAULT,&lv_font_montserrat_12);
 
 	  labels[0] = lv_label_create(scr5, NULL);
 	  lv_obj_add_style(labels[0], LV_LABEL_PART_MAIN, &style);
-	  lv_obj_align(labels[0], NULL, LV_ALIGN_IN_TOP_MID, -20, 0);
+	  lv_obj_align(labels[0], NULL, LV_ALIGN_IN_TOP_MID, -10, 0);
 
 
 	 /* Create an `lv_task` to update the arc.

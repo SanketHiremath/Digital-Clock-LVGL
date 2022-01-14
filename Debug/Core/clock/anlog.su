@@ -1,6 +1,8 @@
 lv_obj_style_dec.h:113:1:lv_obj_set_style_local_bg_color	16	static
+lv_obj_style_dec.h:154:1:lv_style_set_text_color	16	static
 lv_obj_style_dec.h:158:1:lv_style_set_text_font	24	static
-anlog.c:44:6:launch_analog_clock	16	static
-anlog.c:50:6:kill_analog_clock	8	static
-anlog.c:55:13:update_time	16	static
-anlog.c:94:7:analog	24	static
+anlog.c:54:6:launch_analog_clock	16	static
+anlog.c:60:14:get_day	16	static
+anlog.c:77:13:update_analog_time	16	static
+anlog.c:103:13:update_digital_time	24	static
+anlog.c:132:7:analog	24	static

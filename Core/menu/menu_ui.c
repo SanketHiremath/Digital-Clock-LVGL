@@ -22,7 +22,7 @@ static lv_obj_t * heading2;
 
 uint8_t flag = 0;
 uint8_t set_brightness_flag;
-uint16_t brightness_val = 255;
+uint16_t brightness_val;
 
 void launch_setting_menu_screen() {
 	button_register.screen = 2;

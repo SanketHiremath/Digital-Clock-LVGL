@@ -40,16 +40,14 @@ static void slider_event_handler(lv_obj_t * obj, lv_event_t event)
 {
 
      if(event == LV_EVENT_VALUE_CHANGED) {
-    	brightness_val = lv_slider_get_value(slider_brightness);
-    	set_brightness_flag = 1;
-
+  //   	brightness_val = lv_slider_get_value(slider_brightness);
+     	lv_slider_set_value(slider_brightness, brightness_val, LV_ANIM_ON);
+     	set_brightness_flag = 1;
     }
 }
 
 
 void opn_setting_menu(void) {
-
-
 
     //creating a group & setting the input driver
 	g = lv_group_create();

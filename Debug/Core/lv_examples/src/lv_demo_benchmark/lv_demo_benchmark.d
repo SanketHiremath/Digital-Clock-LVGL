@@ -5,7 +5,7 @@ Core/lv_examples/src/lv_demo_benchmark/lv_demo_benchmark.o: \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_misc/lv_log.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_misc/../lv_conf_internal.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_misc/../lv_conf_kconfig.h \
- d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lv_conf.h \
+ d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lv_conf.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_misc/lv_task.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_misc/lv_mem.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_misc/lv_log.h \
@@ -51,10 +51,10 @@ Core/lv_examples/src/lv_demo_benchmark/lv_demo_benchmark.o: \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/../lv_core/lv_style.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/lv_draw_label.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_bidi.h \
- d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lvgl\src\lv_conf_internal.h \
+ d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lvgl\src\lv_conf_internal.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_txt.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_area.h \
- d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lvgl\src\lv_font\lv_font.h \
+ d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lvgl\src\lv_font\lv_font.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_printf.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/lv_draw_line.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/lv_draw_img.h \
@@ -100,9 +100,9 @@ Core/lv_examples/src/lv_demo_benchmark/lv_demo_benchmark.o: \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_widgets/../lv_font/lv_symbol_def.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_widgets/../lv_misc/lv_txt.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_widgets/../lv_draw/lv_draw.h \
- d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lvgl\src\lv_conf_internal.h \
- d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lvgl\src\lv_core\lv_style.h \
- d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lvgl\src\lv_misc\lv_txt.h \
+ d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lvgl\src\lv_conf_internal.h \
+ d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lvgl\src\lv_core\lv_style.h \
+ d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lvgl\src\lv_misc\lv_txt.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_widgets/../lv_draw/lv_img_decoder.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_widgets/../lv_draw/lv_draw_rect.h \
  ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_widgets/../lv_draw/lv_draw_label.h \
@@ -182,7 +182,7 @@ Core/lv_examples/src/lv_demo_benchmark/lv_demo_benchmark.o: \
 
 ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_misc/../lv_conf_kconfig.h:
 
-d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lv_conf.h:
+d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lv_conf.h:
 
 ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_misc/lv_task.h:
 
@@ -274,13 +274,13 @@ d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lv_con
 
 ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_bidi.h:
 
-d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lvgl\src\lv_conf_internal.h:
+d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lvgl\src\lv_conf_internal.h:
 
 ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_txt.h:
 
 ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_area.h:
 
-d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lvgl\src\lv_font\lv_font.h:
+d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lvgl\src\lv_font\lv_font.h:
 
 ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_core/../lv_draw/../lv_misc/lv_printf.h:
 
@@ -372,11 +372,11 @@ d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lvgl\s
 
 ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_widgets/../lv_draw/lv_draw.h:
 
-d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lvgl\src\lv_conf_internal.h:
+d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lvgl\src\lv_conf_internal.h:
 
-d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lvgl\src\lv_core\lv_style.h:
+d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lvgl\src\lv_core\lv_style.h:
 
-d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.10\core\lvgl\src\lv_misc\lv_txt.h:
+d:\personalprojects_andfiles\stm32_personalworkspace\the_clock_v1.11\core\lvgl\src\lv_misc\lv_txt.h:
 
 ../Core/lv_examples/src/lv_demo_benchmark/../../../lvgl/src/lv_widgets/../lv_draw/lv_img_decoder.h:
 
