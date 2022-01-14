@@ -1,0 +1,12 @@
+lv_obj_style_dec.h:112:1:lv_style_set_bg_grad_dir	16	static
+lv_obj_style_dec.h:113:1:lv_obj_set_style_local_bg_color	16	static
+lv_obj_style_dec.h:113:1:lv_style_set_bg_color	16	static
+lv_obj_style_dec.h:114:1:lv_style_set_bg_grad_color	16	static
+lv_obj_style_dec.h:115:1:lv_style_set_bg_opa	16	static
+lv_obj_style_dec.h:116:1:lv_style_set_border_width	16	static
+menu_ui.c:27:6:launch_setting_menu_screen	16	static
+menu_ui.c:33:6:launch_pomedora_menu_screen	16	static
+menu_ui.c:39:6:kill_setting_menu_screen	8	static
+menu_ui.c:43:6:kill_pomedora_menu_screen	8	static
+menu_ui.c:48:6:create_setting_menu	24	static
+menu_ui.c:88:6:create_pomedora_menu	24	static

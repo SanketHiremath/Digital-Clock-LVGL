@@ -1,0 +1,8 @@
+lv_obj_style_dec.h:113:1:lv_obj_set_style_local_bg_color	16	static
+lv_obj_style_dec.h:154:1:lv_style_set_text_color	16	static
+lv_obj_style_dec.h:158:1:lv_style_set_text_font	24	static
+breath_ui.c:29:13:arc_loader_hold	16	static
+breath_ui.c:37:13:arc_loader	40	static
+breath_ui.c:69:6:launch_update_breathing	16	static
+breath_ui.c:77:6:kill_update_breathing	8	static
+breath_ui.c:82:6:update_breathing	24	static
